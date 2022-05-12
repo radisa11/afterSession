@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1>Session demo</h1>
+    <h3>Count :
+        @{
+            if(ViewBag.Count == null)
+            {
+                <span>Noting in session</span>
+            }else{
+                @ViewBag.Count
+            }
+        }
+    </h3>
+</div>
